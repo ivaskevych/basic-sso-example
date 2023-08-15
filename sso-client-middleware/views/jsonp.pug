@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+  title JSONP example
+  body
+    include nav.pug
+
+    h1 Result of JSONP
+    pre#results(style={ border: '1px solid black' })
+
+    script(src='../public/jsonp.js')
+    script(src=jsonpPath)

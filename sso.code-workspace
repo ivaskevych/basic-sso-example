@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "sso-client-middleware"
+		},
+		{
+			"path": "sso-idp"
+		}
+	],
+}

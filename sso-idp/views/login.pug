@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title= title
+  body
+    h1(id="login-title") Please log in
+    if error
+        p(style="color: red;").
+            #{error}
+    form(action=action, method="POST")
+        input(type="text", id="redirectUrl", hidden, name="redirectUrl" value=redirectUrl )
+        input(type="hidden", name="_csrf", value=csrfToken)
+        table(style="")
+            tr
+                td
+                    input(type="email", id="email", required, name="email", placeholder="email@foobar.com")
+            tr
+                td
+                    input(type="password", id="password", required, name="password")
+        br
+        input(type="submit", id="accept", name="submit", value="Log in")
